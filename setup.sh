@@ -51,6 +51,9 @@ sudo chmod +x /home/$username/PiFM/pifm
 sudo chmod +x /usr/local/bin/pifm
 sudo chmod +x /usr/local/bin/pifm-basic
 clear
+if [ $username != "pi" ]; then
+  sed -i "s|/pi/|/$username/|" /home/$username/Desktop/PiFM.desktop
+fi
 echo "Completed" ; sleep 2
 clear
 echo "To start broadcasting, use the menu or desktop shortcuts,"
