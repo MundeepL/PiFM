@@ -59,7 +59,7 @@ git clone https://github.com/mundeepl/PiFM
 ```
 This will download the software from this repository
 ```
-chmod +x /home/pi/PiFM/setup-pi4.sh
+chmod +x /home/<your_username>/PiFM/setup-pi4.sh
 ```
 This changes the permissions to allow you to run the setup
 ```
@@ -75,7 +75,7 @@ git clone https://github.com/mundeepl/PiFM
 ```
 This will download the software from this repository
 ```
-chmod +x /home/pi/PiFM/setup.sh
+chmod +x /home/<your_username>/PiFM/setup.sh
 ```
 This changes the permissions to allow you to run the setup
 ```

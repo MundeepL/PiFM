@@ -120,5 +120,6 @@ echo -ne '\n'
 
 
 # starting the PiFM software with the chosen variable flags
-cd /home/pi/PiFM/src
+username=$(whoami)
+cd /home/$username/PiFM/src
 sudo ./pifm --freq $frequency --ps $ps --rt "$rt" --audio $audio --pi $pi --pty $pty --mpx $mpx --power $power --preemph $pre
