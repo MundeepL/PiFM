@@ -118,7 +118,7 @@ sleep 1
 echo -ne 'Completed. Starting service PiFM.  \r'
 echo -ne '\n'
 
-
+username=$(whoami)
 # starting the PiFM software with the chosen variable flags
-cd /home/pi/PiFM/src
+cd /home/$username/PiFM/src
 sudo ./pifm --freq $frequency --ps $ps --rt "$rt" --audio $audio --pi $pi --pty $pty --mpx $mpx --power $power --preemph $pre
