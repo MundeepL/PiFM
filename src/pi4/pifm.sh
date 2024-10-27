@@ -111,6 +111,6 @@ zenity --progress --title="PiFM by Mundeep Lamport" --percentage=0 --auto-close 
 echo "Completed. Starting service Pi FM RDS"
 
 # Running Pi FM RDS
-cd /home/pi/PiFM/src
+cd $HOME/PiFM/src
 sudo ./pifm --ps $ps --rt "$rt" --freq $frequency --audio $audio --preemph $region --pty $genre --power $power
-zenity --title="PiFM by Mundeep Lamport" --info --text="Transmission ended. Thank you for using the PiFM Transmission software that was developed by Mundeep Lamport. If you would like to use more advanced settings, be sure to check out the README file in the /home/pi/PiFM directory. This will teach you further arguements and how to use the command line." --width=500 --height=150 --ok-label="Exit"
+zenity --title="PiFM by Mundeep Lamport" --info --text="Transmission ended. Thank you for using the PiFM Transmission software that was developed by Mundeep Lamport. If you would like to use more advanced settings, be sure to check out the README file in the $HOME/PiFM directory. This will teach you further arguements and how to use the command line." --width=500 --height=150 --ok-label="Exit"
