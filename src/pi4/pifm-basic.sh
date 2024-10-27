@@ -112,5 +112,5 @@ echo -ne '[]####################[]      (100%)\r'
 sleep 1
 echo -ne 'Completed. Starting service Pi FM.  \r'
 echo -ne '\n'
-cd /home/pi/PiFM/src
+cd $HOME/PiFM/src
 sudo ./pifm --freq $frequency --ps $ps --rt "$rt" --audio $audio --pi $pi --pty $pty --mpx $mpx --power $power --preemph $pre
