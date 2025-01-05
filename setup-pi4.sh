@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# This is a setup script for the Pi FM RDS Transmitter project streamlined by Mundeep Lamport
+# This is a setup script for the Pi FM RDS Transmitter project streamlined by MundeepL
 clear
 echo "Welcome to the PiFM installer. This script will help you get up and running."
 echo "This script is designed specifically for the Raspberry Pi 4."
-echo "For more information, visit https://github.com/mundeeplamport"
+echo "For more information, visit https://github.com/mundeepl"
 echo "WARNING! Your system will reboot once completed."
 sleep 10
 clear
