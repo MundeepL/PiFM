@@ -3,7 +3,7 @@ filecount=0
 nameaccepted=0
 textaccepted=0
 
-# This is a small script created by Mundeep Lamport to streamline
+# This is a small script created by MundeepL to streamline
 # the process of running Pi FM RDS which is an FM transmitter tool.
 
 clear
@@ -22,11 +22,11 @@ echo "╚═╝     ╚═╝    ╚═╝     ╚═╝     ╚═╝     ╚�
 echo " "
 
 # Display about
-zenity --title="PiFM by Mundeep Lamport" --info --text="Welcome to the Raspberry Pi FM Transmitter with RDS. This is a small applet designed by Mundeep Lamport to easily set up Pi FM RDS and is designed to make the process of broadcasting significantly easier. Please note that the software only decodes .wav or .ogg files." --width=500 --height=150 --ok-label="Begin"
+zenity --title="PiFM by MundeepL" --info --text="Welcome to the Raspberry Pi FM Transmitter with RDS. This is a small applet designed by MundeepL to easily set up Pi FM RDS and is designed to make the process of broadcasting significantly easier. Please note that the software only decodes .wav or .ogg files." --width=500 --height=150 --ok-label="Begin"
 
 # Choose a Program Service name (advanced)
          until [  $nameaccepted == 1 ] ; do
-		ps=$(zenity --title="PiFM by Mundeep Lamport" --entry --text="Choose the Program Service Name (max. 8 characters)" --entry-text="PiFM" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
+		ps=$(zenity --title="PiFM by MundeepL" --entry --text="Choose the Program Service Name (max. 8 characters)" --entry-text="PiFM" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
 		pslength=${#ps}
 
 		if [[ $pslength -ge 0 && $pslength -le 8 ]] ; then 
@@ -40,7 +40,7 @@ fi
 
 # Choose the radio text (advanced)
          until [  $textaccepted == 1 ] ; do
-		rt=$(zenity --title="PiFM by Mundeep Lamport" --entry --text="Choose the radio text (max. 64 characters)" --entry-text="Hello, World!" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
+		rt=$(zenity --title="PiFM by MundeepL" --entry --text="Choose the radio text (max. 64 characters)" --entry-text="Hello, World!" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
 		rtlength=${#rt}
 
 		if [[ $rtlength -ge 0 && $rtlength -le 64 ]] ; then 
@@ -53,7 +53,7 @@ fi
          done
 
 # Choose a frequency
-frequency=$(zenity --title="PiFM by Mundeep Lamport" --entry --text="Choose a frequency. (Pi 4 max. 93)" --entry-text="87.6" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
+frequency=$(zenity --title="PiFM by MundeepL" --entry --text="Choose a frequency. (Pi 4 max. 93)" --entry-text="87.6" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
 echo "The chosen frequency is $frequency MHz"
 
 # Chooose an audio file (advanced)
