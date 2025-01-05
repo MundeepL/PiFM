@@ -43,7 +43,7 @@ PiFM has been developed solely for experimentation only. See the [legal warning]
 ## Installation
 PiFM 1.2.1 depends on a number of prerequisites. These are required. to get the transmitter ready.
 
-1. Install Raspberry Pi OS Desktop onto an SD card (click [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) for a detailed guide)
+1. Install Raspberry Pi OS Desktop onto an SD card (click [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) for a detailed guide) (This was built using Raspbian Stretch. See [here](https://downloads.raspberrypi.org/raspbian/images/) for archived images.)
 2. Connect your peripherals to the Raspberry Pi (keyboard/mouse/SD/HDMI/etc...)
 3. Once you are ready to start, turn on the Pi and wait until the desktop environment appears, before connecting to a network.
 4. At the top left of the screen click the terminal icon and wait for the terminal window to load
@@ -238,6 +238,7 @@ The samples are played by `pi_fm_adv.c` that is adapted from Richard Hirst's [Pi
 
 ## History
 * Future    : Future testing to ensure stability on latest Raspberry Pi OS releases and streamlining install/operation
+* 2025-01-05: edited and updated grammar
 * 2023-05-26: edited grammar issues and updated URLs
 * 2020-05-14: PiFM 1.2.1 Support for the Pi 4 added. Python-based dipole calculator added
 * 2020-05-13: PiFM 1.2 developed and released (zenity based gui)
@@ -253,6 +254,6 @@ The samples are played by `pi_fm_adv.c` that is adapted from Richard Hirst's [Pi
 * 2014-04-06: initial release, which only supported 228 kHz monophonic audio input files
 
 --------
-© [Mundeep Lamport]((/www.linkedin.com/in/mundeepl/)) 2023. Re-released under the GNU GPL v3.
+[Mundeep Lamport] 2025. Re-released under the GNU GPL v3.
 
 
