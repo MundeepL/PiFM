@@ -74,19 +74,19 @@ esac
 
 
 # Choose a region
-region=$(zenity  --list  --title="PiFM by Mundeep Lamport" --text="Select current region" --radiolist --column "Pick" --column "PreEmph" --column "Region" TRUE us USA FALSE eu Europe FALSE eu Asia --ok-label="Continue" --cancel-label="Close")
+region=$(zenity  --list  --title="PiFM by MundeepL" --text="Select current region" --radiolist --column "Pick" --column "PreEmph" --column "Region" TRUE us USA FALSE eu Europe FALSE eu Asia --ok-label="Continue" --cancel-label="Close")
 echo "Region set to: $region"
 
 # Choose the genre
-genre=$(zenity  --list  --title="PiFM by Mundeep Lamport" --text="Select the broadcast genre" --radiolist --column "Pick" --column "Number" --column "Genre" TRUE 0 "Undefined" FALSE 1 "News" FALSE 2 "Current Affairs" FALSE 3 "Information" FALSE 4 "Sport" FALSE 5 "Education" FALSE 6 "Drama" FALSE 7 "Culture" FALSE 8 "Science" FALSE 9 "Varied" False 10 "Pop music" FALSE 11 "Rock music" FALSE 12 "Easy listening" FALSE 13 "Light Classical" FALSE 14 "Serious Classical" FALSE 15 "Other music" FALSE 16 "Weather" FALSE 17 "Finance" FALSE 18 "Children's programmes" FALSE 19 "Social affairs" FALSE 20 "Religion" FALSE 21 "Phone-in" FALSE 22 "Travel" FALSE 23 "Leisure" FALSE 24 "Jazz music" FALSE 25 "Country Music" FALSE 26 "National music" FALSE 27 "Oldies music" FALSE 28 "Folk music" FALSE 29 "Documentary" FALSE 30 "ALARM TEST" FALSE 31 "ALARM" --ok-label="Continue" --cancel-label="Close")
+genre=$(zenity  --list  --title="PiFM by MundeepL" --text="Select the broadcast genre" --radiolist --column "Pick" --column "Number" --column "Genre" TRUE 0 "Undefined" FALSE 1 "News" FALSE 2 "Current Affairs" FALSE 3 "Information" FALSE 4 "Sport" FALSE 5 "Education" FALSE 6 "Drama" FALSE 7 "Culture" FALSE 8 "Science" FALSE 9 "Varied" False 10 "Pop music" FALSE 11 "Rock music" FALSE 12 "Easy listening" FALSE 13 "Light Classical" FALSE 14 "Serious Classical" FALSE 15 "Other music" FALSE 16 "Weather" FALSE 17 "Finance" FALSE 18 "Children's programmes" FALSE 19 "Social affairs" FALSE 20 "Religion" FALSE 21 "Phone-in" FALSE 22 "Travel" FALSE 23 "Leisure" FALSE 24 "Jazz music" FALSE 25 "Country Music" FALSE 26 "National music" FALSE 27 "Oldies music" FALSE 28 "Folk music" FALSE 29 "Documentary" FALSE 30 "ALARM TEST" FALSE 31 "ALARM" --ok-label="Continue" --cancel-label="Close")
 echo "Program Type: $genre" 
 
 # Choose output power
-power=$(zenity  --list  --title="PiFM by Mundeep Lamport" --radiolist --text="Select output power." --column "Pick" --column "Power" TRUE 1 FALSE 2 FALSE 3 FALSE 4 FALSE 5 FALSE 6 FALSE 7 --ok-label="Continue" --cancel-label="Close")
+power=$(zenity  --list  --title="PiFM by MundeepL" --radiolist --text="Select output power." --column "Pick" --column "Power" TRUE 1 FALSE 2 FALSE 3 FALSE 4 FALSE 5 FALSE 6 FALSE 7 --ok-label="Continue" --cancel-label="Close")
 echo "Power set to $power"
 
 # End notice before starting
-zenity --title="PiFM by Mundeep Lamport" --info --text="Now that you have chosen your options, it is time to begin transmitting. Ensure your antenna is inserted into GPIO 21 and then click start." --ok-label="Start" --width=500 --height=150
+zenity --title="PiFM by MundeepL" --info --text="Now that you have chosen your options, it is time to begin transmitting. Ensure your antenna is inserted into GPIO 21 and then click start." --ok-label="Start" --width=500 --height=150
 
 # Cool loading bar
 (
@@ -106,11 +106,11 @@ echo "Finishing..." ; sleep 1
 echo "Finished." ; sleep 0.5
 echo "100"
 ) |
-zenity --progress --title="PiFM by Mundeep Lamport" --percentage=0 --auto-close --auto-kill
+zenity --progress --title="PiFM by MundeepL" --percentage=0 --auto-close --auto-kill
 (( $? != 0 )) && zenity --error --title="PiFM Error" --text="Error! Could not complete!" --width=200 --height=100
 echo "Completed. Starting service Pi FM RDS"
 
 # Running Pi FM RDS
 cd $HOME/PiFM/src
 sudo ./pifm --ps $ps --rt "$rt" --freq $frequency --audio $audio --preemph $region --pty $genre --power $power
-zenity --title="PiFM by Mundeep Lamport" --info --text="Transmission ended. Thank you for using the PiFM Transmission software that was developed by Mundeep Lamport. If you would like to use more advanced settings, be sure to check out the README file in the $HOME/PiFM directory. This will teach you further arguements and how to use the command line." --width=500 --height=150 --ok-label="Exit"
+zenity --title="PiFM by MundeepL" --info --text="Transmission ended. Thank you for using the PiFM Transmission software that was developed by MundeepL. If you would like to use more advanced settings, be sure to check out the README file in the $HOME/PiFM directory. This will teach you further arguements and how to use the command line." --width=500 --height=150 --ok-label="Exit"
