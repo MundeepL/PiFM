@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# This is a small script created by Mundeep Lamport as an alternative
+# This is a small script created by MundeepL as an alternative
 # to the GUI interface of PiFM, which is an FM transmitter app
 
 
-# Initialising and opening the install script by clearing the terminal to make install clutter-free
+# Initialising and opening the install script by clearing the terminal to make the installation clutter-free
 clear
 echo " "
 echo "██████╗ ██╗    ███████╗███╗   ███╗     ██╗   ██████╗"
@@ -33,7 +33,7 @@ echo "allowing you to start transmitting with just a few bits of key, user-custo
 sleep 5
 clear
 
-# Choosing transmission options by reading in vaariable values
+# Choosing transmission options by reading in variable values
 # Choose Frequency
 echo "Which frequency would you like to use? (85.5-108)"
 read frequency
