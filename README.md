@@ -254,6 +254,6 @@ The samples are played by `pi_fm_adv.c` that is adapted from Richard Hirst's [Pi
 * 2014-04-06: initial release, which only supported 228 kHz monophonic audio input files
 
 --------
-[Mundeep Lamport] 2025. Re-released under the GNU GPL v3.
+MundeepL 2025. Re-released under the GNU GPL v3.
 
 
