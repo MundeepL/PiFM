@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This is a small script created by Mundeep Lamport as an alternative
+# This is a small script created by MundeepL as an alternative
 # to the GUI interface of PiFM, which is an FM transmitter app
 
 clear
@@ -18,7 +18,7 @@ sleep 0.1
 echo "╚═╝     ╚═╝    ╚═╝     ╚═╝     ╚═╝     ╚═╝╚═╝╚══════╝"
 echo " "
 sleep 1
-echo "PiFM has been produced by Mundeep Lamport"
+echo "PiFM has been produced by MundeepL"
 sleep 5
 clear
 echo "Welcome to PiFM. An FM-RDS capable transmitter."
