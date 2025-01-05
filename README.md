@@ -238,7 +238,7 @@ The samples are played by `pi_fm_adv.c` that is adapted from Richard Hirst's [Pi
 
 ## History
 * Future    : Future testing to ensure stability on latest Raspberry Pi OS releases and streamlining install/operation
-* 2025-01-05: edited and updated grammar
+* 2025-01-05: edited and updated grammar. Merged [pull request from klte-hype](https://github.com/klte-hype/PiFM/commit/cfc4da9605415cae350238961275dd85413742e4)
 * 2023-05-26: edited grammar issues and updated URLs
 * 2020-05-14: PiFM 1.2.1 Support for the Pi 4 added. Python-based dipole calculator added
 * 2020-05-13: PiFM 1.2 developed and released (zenity based gui)
