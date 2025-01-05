@@ -59,7 +59,7 @@ git clone https://github.com/mundeepl/PiFM
 ```
 This will download the software from this repository
 ```
-chmod +x /home/pi/PiFM/setup-pi4.sh
+chmod +x ~/PiFM/setup-pi4.sh
 ```
 This changes the permissions to allow you to run the setup
 ```
@@ -71,11 +71,11 @@ sudo apt-get install git -y
 ```
 This will install git, which allows you to download files from Github
 ```
-git clone https://github.com/mundeepl/PiFM
+git clone https://github.com/redmi4a-hype/PiFM
 ```
 This will download the software from this repository
 ```
-chmod +x /home/pi/PiFM/setup.sh
+chmod +x ~/PiFM/setup.sh
 ```
 This changes the permissions to allow you to run the setup
 ```
@@ -108,7 +108,7 @@ If at any point you wish to close the broadcast, make the terminal window active
 ## Advanced Users (those confident with a terminal)
 You can also use PiFM using the terminal
 ```
-cd /home/pi/PiFM/src
+cd ~/PiFM/src
 sudo ./PiFM
 ```
 This will generate an FM transmission on 87.6Mhz, with default station name (PS), radiotext (RT) and PI-code (PI), without audio. The radio frequency signal is emitted on GPIO 4 (pin 7 on header P1).

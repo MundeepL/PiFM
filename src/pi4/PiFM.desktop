@@ -3,8 +3,7 @@ Version=1.0
 Name=PiFM
 Comment=Broadcast from your Raspberry Pi!
 GenericName=FM Transmitter
-Icon=/home/pi/PiFM/src/PiFM.png
+Icon=$HOME/PiFM/src/PiFM.png
 Terminal=true
 Type=Application
-Exec= /home/pi/PiFM/src/pi4/pifm.sh
-
+Exec= $HOME/PiFM/src/pi4/pifm.sh

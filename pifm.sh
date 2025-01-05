@@ -6,7 +6,7 @@ nameaccepted=0
 textaccepted=0
 
 
-# This is a small script created by Mundeep Lamport to streamline
+# This is a small script created by MundeepL to streamline
 # the process of running Pi FM RDS which is an FM transmitter tool.
 
 clear
@@ -43,7 +43,7 @@ fi
 
 # Choose the radio text (advanced)
          until [  $textaccepted == 1 ] ; do
-		rt=$(zenity --title="PiFM by Mundeep Lamport" --entry --text="Choose the radio text (max. 64 characters)" --entry-text="Hello, World!" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
+		rt=$(zenity --title="PiFM by MundeepL" --entry --text="Choose the radio text (max. 64 characters)" --entry-text="Hello, World!" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
 		rtlength=${#rt}
 
 		if [[ $rtlength -ge 0 && $rtlength -le 64 ]] ; then 
@@ -114,6 +114,6 @@ zenity --progress --title="PiFM by mundeepl" --percentage=0 --auto-close --auto-
 echo "Completed. Starting service Pi FM RDS"
 
 # Running Pi FM RDS
-cd /home/pi/PiFM/src
+cd $HOME/PiFM/src
 sudo ./pifm --ps $ps --rt "$rt" --freq $frequency --audio $audio --preemph $region --pty $genre --power $power
-zenity --title="PiFM by mundeepl" --info --text="Transmission ended. Thank you for using the PiFM Transmission software that was developed by mundeepl. If you would like to use more advanced settings, be sure to check out the README file in the /home/pi/PiFM directory. This will teach you further arguements and how to use the command line." --width=500 --height=150 --ok-label="Exit"
+zenity --title="PiFM by mundeepl" --info --text="Transmission ended. Thank you for using the PiFM Transmission software that was developed by mundeepl. If you would like to use more advanced settings, be sure to check out the README file in the $HOME/PiFM directory. This will teach you further arguements and how to use the command line." --width=500 --height=150 --ok-label="Exit"
