@@ -6,7 +6,7 @@ nameaccepted=0
 textaccepted=0
 
 
-# This is a small script created by Mundeep Lamport to streamline
+# This is a small script created by MundeepL to streamline
 # the process of running Pi FM RDS which is an FM transmitter tool.
 
 clear
@@ -43,7 +43,7 @@ fi
 
 # Choose the radio text (advanced)
          until [  $textaccepted == 1 ] ; do
-		rt=$(zenity --title="PiFM by Mundeep Lamport" --entry --text="Choose the radio text (max. 64 characters)" --entry-text="Hello, World!" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
+		rt=$(zenity --title="PiFM by MundeepL" --entry --text="Choose the radio text (max. 64 characters)" --entry-text="Hello, World!" --width=500 --height=150 --ok-label="Continue" --cancel-label="Close")
 		rtlength=${#rt}
 
 		if [[ $rtlength -ge 0 && $rtlength -le 64 ]] ; then 
